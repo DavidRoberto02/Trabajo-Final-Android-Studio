@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Mayoreo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="417dp"
+        android:layout_height="49dp"
+        android:background="#1C85A5"
+        android:fontFamily="sans-serif-black"
+        android:text="Mayoreo"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Productos disponibles para vender"
+        android:textColor="#050505"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="408dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/tecate"
+            android:layout_width="407dp"
+            android:layout_height="37dp"
+            android:text="Tapas tecate" />
+
+        <RadioButton
+            android:id="@+id/Carton"
+            android:layout_width="407dp"
+            android:layout_height="39dp"
+            android:text="Carton de Tecate 1.2 L" />
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="400dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="19dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Cantidad de producto a vender para un descuento:"
+            android:textColor="#050505"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PDEP" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="421dp"
+            android:layout_height="168dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <RadioButton
+                android:id="@+id/tapamin"
+                android:layout_width="409dp"
+                android:layout_height="41dp"
+                android:text="10 tapas -5 c/u" />
+
+            <RadioButton
+                android:id="@+id/tapamax"
+                android:layout_width="410dp"
+                android:layout_height="49dp"
+                android:text="50 tapas -15 c/u" />
+
+            <RadioButton
+                android:id="@+id/cartonmin"
+                android:layout_width="412dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="5 cartones -10 c/u" />
+
+            <RadioButton
+                android:id="@+id/cartonmax"
+                android:layout_width="412dp"
+                android:layout_height="39dp"
+                android:text="1 Tarima -20 c/u"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <TextView
+        android:id="@+id/textView11"
+        android:layout_width="95dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Total:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+        <TextView
+            android:id="@+id/RESULTADO"
+            android:layout_width="263dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+        <Button
+        android:id="@+id/CERRAR"
+        android:layout_width="159dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginLeft="126dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginRight="126dp"
+        android:background="#8BC34A"
+        android:text="Cerrar Sesion"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+        <TextView
+            android:id="@+id/PDEP"
+            android:layout_width="408dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="15dp"
+            android:hint="Precio del producto disponible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView >

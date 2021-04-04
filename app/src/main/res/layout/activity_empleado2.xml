@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".Empleado2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="Domingo:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="Sabado:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/M"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="Martes:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/L"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/J"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="Jueves:"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/M"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empleado 2"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/dias"
+        android:layout_width="216dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="52dp"
+        android:text="Dias de trabajo"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="173dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="52dp"
+        android:text="Ventas realizadas"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/dias"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/L"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="Lunes:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/dias"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="Viernes:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/J"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/igual1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#4CAF50"
+        android:text="="
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/diaL"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="28dp"
+        android:background="#4CAF50"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/L"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/diaM"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:background="#4CAF50"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/M"
+        app:layout_constraintTop_toBottomOf="@+id/diaL" />
+
+    <EditText
+        android:id="@+id/diaJ"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="28dp"
+        android:background="#4CAF50"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/J"
+        app:layout_constraintTop_toBottomOf="@+id/diaM" />
+
+    <EditText
+        android:id="@+id/diaV"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="32dp"
+        android:background="#4CAF50"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/diaJ" />
+
+    <EditText
+        android:id="@+id/diaS"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="24dp"
+        android:background="#4CAF50"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/diaV" />
+
+    <EditText
+        android:id="@+id/diaD"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="24dp"
+        android:background="#4CAF50"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/diaS" />
+
+    <TextView
+        android:id="@+id/resultado1"
+        android:layout_width="146dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/navegar1"
+        app:layout_constraintStart_toEndOf="@+id/igual1"
+        app:layout_constraintTop_toBottomOf="@+id/dia5" />
+
+        <Button
+            android:id="@+id/Guardar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="12dp"
+            android:background="#8BC34A"
+            android:text="registrar"
+            android:onClick="guardado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/navegar1" />
+
+        <Button
+            android:id="@+id/navegar1"
+            android:layout_width="191dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="612dp"
+            android:background="#8BC34A"
+            android:text="Mayoreo"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toStartOf="@+id/resultado1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/igual1"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/Mostrar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="12dp"
+            android:background="#8BC34A"
+            android:text="Mostrar"
+            android:onClick="buscar"
+            app:layout_constraintStart_toEndOf="@+id/Guardar1"
+            app:layout_constraintTop_toBottomOf="@+id/navegar1" />
+
+        <EditText
+            android:id="@+id/Fecha1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:ems="10"
+            android:hint="semana del mes"
+            android:textColorHint="#000000"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
